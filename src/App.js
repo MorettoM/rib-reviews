@@ -24,7 +24,7 @@ function App() {
 
       // Google Maps URI to open on Android/iOS
       const mobileUrl =
-        "https://maps.google.com/?cid=YOUR_CID#lrd=0x0000000000000000:0xYOUR_PLACE_ID,1";
+        "https://www.google.com/maps/place/Ribs+al+r%C3%ADo+-+Mercado+Soho/@-34.5888724,-58.4293853,17z/data=!4m8!3m7!1s0x95bcb5ad8bdb9dbf:0xea7675417b3ef210!8m2!3d-34.5888768!4d-58.4268104!9m1!1b1!16s%2Fg%2F11s5wtfkv8?entry=ttu";
 
       // Determine which URL to use
       const targetUrl = isAndroid() || isIOS() ? mobileUrl : webUrl;
