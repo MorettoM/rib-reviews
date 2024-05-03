@@ -23,7 +23,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <body>
+      <div className="app-body">
         <h3>¿Como fue tu experiencia?</h3>
 
         <Rating
@@ -37,10 +37,10 @@ function App() {
           size="large"
         />
 
-        {rating <= 3 ? (
+        {rating <= 3 && rating !== 0 ? (
           <TextareaAutosize placeholder="Dejanos un comentario" />
         ) : null}
-      </body>
+      </div>
     </div>
   );
 }
