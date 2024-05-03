@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/git@github.com:MorettoM/rib-reviews.git/static/css/main.e62142be.css",
-    "main.js": "/git@github.com:MorettoM/rib-reviews.git/static/js/main.97216ddc.js",
-    "static/js/453.0609ab08.chunk.js": "/git@github.com:MorettoM/rib-reviews.git/static/js/453.0609ab08.chunk.js",
-    "static/media/logoribs.jpg": "/git@github.com:MorettoM/rib-reviews.git/static/media/logoribs.e75aab28d76f474d88a4.jpg",
-    "index.html": "/git@github.com:MorettoM/rib-reviews.git/index.html",
-    "main.e62142be.css.map": "/git@github.com:MorettoM/rib-reviews.git/static/css/main.e62142be.css.map",
-    "main.97216ddc.js.map": "/git@github.com:MorettoM/rib-reviews.git/static/js/main.97216ddc.js.map",
-    "453.0609ab08.chunk.js.map": "/git@github.com:MorettoM/rib-reviews.git/static/js/453.0609ab08.chunk.js.map"
+    "main.css": "/static/css/main.9cbe542e.css",
+    "main.js": "/static/js/main.e4d287b8.js",
+    "static/js/453.0609ab08.chunk.js": "/static/js/453.0609ab08.chunk.js",
+    "static/media/logoribs.jpg": "/static/media/logoribs.e75aab28d76f474d88a4.jpg",
+    "index.html": "/index.html",
+    "main.9cbe542e.css.map": "/static/css/main.9cbe542e.css.map",
+    "main.e4d287b8.js.map": "/static/js/main.e4d287b8.js.map",
+    "453.0609ab08.chunk.js.map": "/static/js/453.0609ab08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e62142be.css",
-    "static/js/main.97216ddc.js"
+    "static/css/main.9cbe542e.css",
+    "static/js/main.e4d287b8.js"
   ]
 }
