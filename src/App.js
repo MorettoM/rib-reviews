@@ -9,11 +9,28 @@ function App() {
 
   useEffect(() => {
     if (rating > 3) {
+      function isAndroid() {
+        return /Android/i.test(navigator.userAgent);
+      }
+
+      // Function to detect if the device is an iPhone/iOS
+      function isIOS() {
+        return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // Google Maps URL to open on PC
+      const webUrl =
+        "https://search.google.com/local/writereview?placeid=ChIJv53bi621vJUREPI-e0F1duo";
+
+      // Google Maps URI to open on Android/iOS
+      const mobileUrl =
+        "https://maps.google.com/?cid=YOUR_CID#lrd=0x0000000000000000:0xYOUR_PLACE_ID,1";
+
+      // Determine which URL to use
+      const targetUrl = isAndroid() || isIOS() ? mobileUrl : webUrl;
+
       setTimeout(() => {
-        window.open(
-          "https://search.google.com/local/writereview?placeid=ChIJv53bi621vJUREPI-e0F1duo",
-          "_blank"
-        );
+        window.open(targetUrl, "_blank");
       }, 300);
     }
   }, [rating]);
