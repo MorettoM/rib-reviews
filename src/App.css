@@ -5,6 +5,7 @@
   font-family: Inter;
   min-height: 100vh;
   min-width: 100vw;
+  position: relative;
 }
 
 .App-logo {
@@ -21,8 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 30%;
-
+  padding-top: 50px;
 }
 
 .MuiRating-iconEmpty {
@@ -40,6 +40,86 @@ h3 {
   justify-content: center;
   text-align: center;
   align-items: center;
+  position: relative;
 
   gap: 25px;
+}
+
+.textarea-contain {
+  position: relative;
+}
+textarea {
+  height: 10rem;
+  width: 40rem;
+  border: 2px solid #fafafa;
+  border-radius: 1rem;
+  background-color: #212121;
+  color: #fafafa;
+}
+textarea:focus {
+  outline: none;
+  border-color: gold;
+}
+textarea:focus + .placeholder-text .text,
+:not(textarea[value=""]) + .placeholder-text .text {
+  background-color: #212121;
+  font-size: 1.1rem;
+  color: #fafafa;
+  transform: translate(0, -6.4rem);
+}
+textarea:focus + .placeholder-text .text {
+  border-color: gold;
+  color: gold;
+}
+.placeholder-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 3px solid transparent;
+  background-color: transparent;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+.text {
+  font-size: 1.4rem;
+  padding: 0 0.5rem;
+  background-color: transparent;
+  transform: translate(0);
+  color: #fafafa;
+  transition: transform 0.15s ease-out, font-size 0.15s ease-out,
+    background-color 0.2s ease-out, color 0.15s ease-out;
+}
+textarea,
+.placeholder-text {
+  font-size: 1.4rem;
+  padding: 20px 1.2rem;
+}
+
+@media (max-width: 40rem) {
+  textarea {
+    width: 70vw;
+  }
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid gold;
+  border-radius: 1rem;
+  float: right;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: gold;
+    cursor: pointer;
+  }
 }
